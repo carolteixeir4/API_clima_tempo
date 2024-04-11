@@ -14,6 +14,10 @@ O projeto é composto por um arquivo HTML, um arquivo CSS e um arquivo JavaScrip
    Este script utiliza o Express.js para criar um servidor que fornece dados meteorológicos utilizando a API do OpenWeatherMap. Ele expõe uma rota GET para consulta desses dados.
    Requer o módulo 'express' para criar o servidor, 'axios' para fazer requisições HTTP, 'path' para manipulação de caminhos de arquivos, 'cors' para lidar com política de mesma origem e
    um arquivo de configuração 'config.json' contendo a chave de API do OpenWeatherMap.
+             **(script,js)**: O script é responsável por lidar com o envio do formulário de pesquisa de cidade. Quando o formulário é enviado, o script captura o valor inserido no campo de entrada, faz uma requisição para o servidor local com esse valor e, em seguida, atualiza a página com os dados meteorológicos recebidos.
+Se houver um erro durante o processo de requisição ou se os dados não forem recebidos corretamente, uma mensagem de erro é exibida
+      - O script depende da presença de uma API local que forneça dados meteorológicos com base no nome da cidade fornecido na requisição.
+      - Certifique-se de que o servidor local esteja em execução e acessível pelo endereço especificado no script.
 
 - **Funcionalidades**
 Consulta de Clima: Os usuários podem inserir o nome da cidade em um formulário e clicar no botão "Consultar" para obter informações sobre o clima atual da cidade.
