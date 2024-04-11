@@ -1,12 +1,14 @@
+/* Reset padrão e definições globais */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-size: 1em;
-  font-family: "Krub";
+  font-family: "Krub"; /* Define a fonte padrão */
 }
 
+/* Estilos para o vídeo de fundo */
 .video-container {
   position: fixed;
   top: 0;
@@ -20,149 +22,175 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.5; /* Define uma opacidade para o vídeo */
 }
 
+/* Estilos para o corpo da página */
 body {
-  height: 100vh;
-  background-color: #fdfdfd;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100vh; /* Define a altura do corpo para a altura da viewport */
+  background-color: #fdfdfd; /* Define a cor de fundo */
+  background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
 }
 
+/* Estilos para a barra de navegação */
 .main-header-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   height: 100px;
-  background-color: #0d5782;
+  background-color: #0d5782; /* Cor de fundo da barra de navegação */
   position: relative;
 }
+
+/* Estilos para o título da barra de navegação */
 .main-header-nav-title {
   display: flex;
   justify-content: space-around;
   align-items: end;
 }
+
+/* Estilos para o título do tempo */
 .main-header-nav-title-weather {
-  font-family: "Krona One";
-  color: #fdfdfd;
-  font-size: 50px;
-  padding: 0 10px 0 0;
-}
-.main-header-nav-title-wise {
-  font-family: "Krub";
-  color: #fdfdfd;
-  font-size: 40px;
-}
-.main-header-nav-logo {
-  width: 140px;
-  position: relative;
-  margin-top: 70px;
+  font-family: "Krona One"; /* Fonte para o título do tempo */
+  color: #fdfdfd; /* Cor do texto */
+  font-size: 50px; /* Tamanho da fonte */
+  padding: 0 10px 0 0; /* Espaçamento */
 }
 
+/* Estilos para o título "Wise" */
+.main-header-nav-title-wise {
+  font-family: "Krub"; /* Fonte para o título "Wise" */
+  color: #fdfdfd; /* Cor do texto */
+  font-size: 40px; /* Tamanho da fonte */
+}
+
+/* Estilos para o logo da barra de navegação */
+.main-header-nav-logo {
+  width: 140px; /* Largura do logo */
+  position: relative;
+  margin-top: 70px; /* Margem superior */
+}
+
+/* Estilos para a seção principal da cidade */
 .main-city {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 60px; /* Margem superior */
   position: relative;
 }
+
+/* Estilos para o título da cidade */
 .main-city h3 {
-  color: #0a4363;
-  font-weight: 500;
-  font-size: 25px;
+  color: #0a4363; /* Cor do texto */
+  font-weight: 500; /* Peso da fonte */
+  font-size: 25px; /* Tamanho da fonte */
   font-style: inherit;
 }
+
+/* Estilos para o formulário de pesquisa da cidade */
 .main-city-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
-}
-.main-city-form input {
-  padding-left: 20px;
-  width: 700px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: #d9d9d9;
-}
-.main-city-form button {
-  width: 100px;
-  height: 50px;
-  border-radius: 50px;
-  margin-left: 10px;
-  background-color: #d9d9d9;
+  margin-top: 10px; /* Margem superior */
 }
 
+.main-city-form input {
+  padding-left: 20px;
+  width: 700px; /* Largura do input */
+  height: 50px; /* Altura do input */
+  border-radius: 50px; /* Borda arredondada */
+  background-color: #d9d9d9; /* Cor de fundo */
+}
+
+.main-city-form button {
+  width: 100px; /* Largura do botão */
+  height: 50px; /* Altura do botão */
+  border-radius: 50px; /* Borda arredondada */
+  margin-left: 10px; /* Margem esquerda */
+  background-color: #d9d9d9; /* Cor de fundo */
+}
+
+/* Estilos para a seção de informações meteorológicas */
 .main-clima {
   display: flex;
   justify-content: center;
   position: relative;
 }
 
+/* Estilos para o resultado do clima */
 #climaResult {
-  margin-top: 4rem;
-  display: none;
-  background-color: #a3ddff;
-  width: 500px;
-  border-radius: 50px;
+  margin-top: 4rem; /* Margem superior */
+  display: none; /* Oculta o elemento por padrão */
+  background-color: #a3ddff; /* Cor de fundo */
+  width: 500px; /* Largura do elemento */
+  border-radius: 50px; /* Borda arredondada */
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 20px #0a4363;
-  padding: 20px;
+  box-shadow: 0px 0px 20px #0a4363; /* Sombra */
+  padding: 20px; /* Preenchimento */
 }
 
+/* Estilos para o nome da cidade no resultado do clima */
 .clima-city-name {
   display: flex;
   text-align: center;
   justify-content: center;
-  font-size: xx-large;
-  font-weight: 600;
-  text-shadow: 0px 0px 5px #fdfdfd;
+  font-size: xx-large; /* Tamanho da fonte */
+  font-weight: 600; /* Peso da fonte */
+  text-shadow: 0px 0px 5px #fdfdfd; /* Sombra do texto */
 }
+
+/* Estilos para a temperatura da cidade no resultado do clima */
 .clima-city-temp {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px;
-  font-size: 50px;
+  padding: 30px; /* Preenchimento */
+  font-size: 50px; /* Tamanho da fonte */
 }
+
+/* Estilos para o ícone do clima */
 .clima-city-icon {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 700; /* Peso da fonte */
+  font-size: 20px; /* Tamanho da fonte */
 }
+
+/* Estilos para informações adicionais de clima */
 .clima-city-bot {
   display: flex;
   align-items: center; /* Alinha os itens verticalmente no centro */
   text-align: center;
   justify-content: center;
-  font-weight: 500;
-  font-size: large;
+  font-weight: 500; /* Peso da fonte */
+  font-size: large; /* Tamanho da fonte */
 }
 
 .clima-city-umidade,
 .clima-city-vento {
   display: flex;
   align-items: center; /* Alinha os itens verticalmente no centro */
-  margin-top: 30px;
+  margin-top: 30px; /* Margem superior */
 }
 
 .espacamento {
   margin: 0 10px; /* Adiciona espaçamento horizontal entre os elementos */
-  margin-top: 30px;
+  margin-top: 30px; /* Margem superior */
 }
 
 .flag-city {
-  width: 40px;
-  margin: 0 15px;
+  width: 40px; /* Largura da bandeira */
+  margin: 0 15px; 
 }
 
 #pin_map {
