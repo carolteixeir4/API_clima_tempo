@@ -8,7 +8,7 @@ O projeto é composto por um arquivo HTML, um arquivo CSS e um arquivo JavaScrip
 
 - **HTML (index.html)**: Contém a estrutura da página da web, incluindo o cabeçalho, formulário de consulta de cidade e seção para exibição dos resultados do clima.
 
-- **CSS (style.css)**: Arquivo de folha de estilos responsável pela aparência e formatação da página da web.
+- **CSS (style.css)**: Arquivo de folha de estilos responsável pela aparência e formatação da página da web. Reseta o padrão e as definições globais, o código inclui um reset padrão para remover o espaçamento e margens padrão dos elementos HTML; Define o modelo de caixa como "border-box" para facilitar o dimensionamento dos elementos; Especifica uma fonte padrão para todo o documento. Além disso, define os estilos do video de fundo, corpo da página, barra de navegação, seção principal (campo de entrada), resultado do clima, responsividade.
 
 - **JavaScript (app.js)**: Arquivo responsável por manipular a interatividade da página, como enviar solicitações para obter os dados do clima e exibir os resultados na página.
    Este script utiliza o Express.js para criar um servidor que fornece dados meteorológicos utilizando a API do OpenWeatherMap. Ele expõe uma rota GET para consulta desses dados.
